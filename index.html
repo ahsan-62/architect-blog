@@ -118,6 +118,31 @@
         line-height: 26px;
       }
 
+      /*feature Card styles*/
+      .feature {
+        display: flex;
+        margin-top: 100px;
+        gap: 100px;
+      }
+
+      .feature-container .section-title {
+        border-left: 5px solid #ff900e;
+        padding-left: 20px;
+      }
+      .feature-card {
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+        margin-bottom: 20px;
+        padding: 30px;
+      }
+
+      .feature-title {
+        color: #131313;
+        font-size: 1.25rem;
+        font-weight: 600;
+      }
+
       /*facts styles*/
       .facts-container {
         margin-top: 150px;
@@ -182,8 +207,12 @@
         header {
           padding: 20px;
         }
-        nav {
+        nav,
+        .feature {
           flex-direction: column;
+        }
+        .feature-image {
+          width: 100%;
         }
         .banner-content {
           width: 80%;
@@ -284,14 +313,17 @@
       <!-- Features Ends -->
       <section class="feature">
         <div class="feature-container">
-          <h1 class="section-title">Features you will love &amp; enjoy</h1>
+          <h1 class="section-title">
+            Features you will <br />
+            love &amp; enjoy
+          </h1>
           <p class="section-description">
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration in some form, by injected
             humour, or randomised words which don't look even
           </p>
           <div class="feature-card">
-            <h3 class="feature-title">Dexktop &amp; Mobile Version</h3>
+            <h3 class="feature-title">Desktop &amp; Mobile Version</h3>
             <p class="section-description">
               There are many variations of passages of Lorem Ipsum available,
               but the majority have suffered alteration in some form, by
