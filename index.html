@@ -118,6 +118,51 @@
         line-height: 26px;
       }
 
+      /*facts styles*/
+      .facts-container {
+        margin-top: 150px;
+      }
+      .facts-card-container {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+      }
+      .card {
+        border-radius: 8px;
+        border: 1px solid #ff900e;
+        text-align: center;
+        padding: 30px;
+      }
+      .facts-states {
+        color: #424242;
+        font-size: 3rem;
+        font-weight: 600;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .facts-title {
+        color: #727272;
+        font-size: 1.25rem;
+        font-weight: 600;
+      }
+
+      /*sponsor styles*/
+      .sponsor-content {
+        text-align: center;
+        margin-top: 100px;
+      }
+      .sponsor-logo {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 50px;
+        gap: 50px;
+      }
+
+      .sponsor-logo img {
+        filter: grayscale(100%);
+        width: 181px;
+      }
+
       /*responsive design*/
       @media screen and (max-width: 576px) {
         header {
@@ -140,6 +185,15 @@
           padding-left: 50px;
           padding-right: 50px;
         }
+        .facts-card-container {
+          flex-direction: column;
+          gap: 30px;
+        }
+        .sponsor-logo {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
       }
 
       @media screen and (min-width: 576px) and (max-width: 1100px) {
@@ -151,6 +205,14 @@
         }
         .features {
           flex-direction: column;
+        }
+        .facts-container {
+          padding: 20px;
+        }
+        .sponsor-logo {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
         }
       }
     </style>
@@ -207,12 +269,52 @@
       </section>
       <!-- Features Ends -->
       <section class="feature"></section>
-      <section class="fact-container">
+      <section class="facts-container">
         <h1 class="section-title">Some Facts</h1>
-        <p>
+        <p class="section-description">
           There are many variations of passages of Lorem Ipsum available, but
           the majority have suffered alteration.
         </p>
+        <div class="facts-card-container">
+          <div class="card">
+            <img src="images/icons/ribon.png" alt="" />
+            <h3 class="facts-stats">54</h3>
+            <h3 class="facts-title">Awards Winnings</h3>
+          </div>
+          <div class="card">
+            <img src="images/icons/projects.png" alt="" />
+            <h3 class="facts-stats">1458</h3>
+            <h3 class="facts-title">Project Finished</h3>
+          </div>
+          <div class="card">
+            <img src="images/icons/customers.png" alt="" />
+            <h3 class="facts-stats">590</h3>
+            <h3 class="facts-title">Clients Worked</h3>
+          </div>
+          <div class="card">
+            <img src="images/icons/email.png" alt="" />
+            <h3 class="facts-stats">22578</h3>
+            <h3 class="facts-title">Email Sent</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- sponsors Starts -->
+      <section class="sponsor-container">
+        <div class="sponsor-content">
+          <h1 class="section-title">Our Sponsors</h1>
+          <p class="section-description">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration.
+          </p>
+        </div>
+        <div class="sponsor-logo">
+          <img src="images/sponsors/spotify.png" alt="" />
+          <img src="images/sponsors/amazon.png" alt="" />
+          <img src="images/sponsors/google.png" alt="" />
+          <img src="images/sponsors/telerama.png" alt="" />
+          <img src="images/sponsors/figma.png" alt="" />
+        </div>
       </section>
     </main>
   </body>
